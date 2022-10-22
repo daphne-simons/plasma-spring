@@ -1,0 +1,10 @@
+body {
+  background-color: #cccccc;
+ }
+
+ .hero {
+  background-color: rgb(197, 225, 250);
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+ }
+
