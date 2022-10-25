@@ -5,20 +5,20 @@ body {
   height: 100%;
  }
 
- .img-deets {
-  max-width: 2000px;
-  text-align:center;
- }
+ /* .img-deets {
+  max-width: 100%;
+  height: auto;
+ } */
  
- /* .bg-img {
+ .bg-img {
   background-color: rgb(197, 225, 250);
   background-image: url("/images/background.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height:100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- } */
+ } 
 
  .text-center {
   text-align: center;
@@ -33,7 +33,142 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
-  padding: 2rem;
-  text-align: center;
+  padding: 150px 180px 100px 100px;
+  margin: 0;
+  text-align:right;
  }
+
+h1 {
+  font-size: 2em;
+}
+
+.flex-div-left {
+  
+  outline: none;
+}
+
+.flex-img-leo {
+  display: flex;
+  justify-content: left;
+  height: 200px;
+  padding: 75px 650px 200px 150px;
+  outline: none;
+}
+
+.flex-div-right {
+  display: flex;
+  outline: none;
+}
+.flex-img-tam {
+  display: flex;
+  justify-content: right;
+  height: 250px;
+  padding: 100px 120px 100px 700px;
+  outline: none;
+}
+
+.flex-div-bottom-left {
+  display: flex;
+  outline: none;
+}
+.flex-img-info {
+  display: flex;
+  text-decoration: none;
+  justify-content: left;
+  height: 275px;
+  padding: 100px 650px 100px 150px;
+  outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+
+/* MEDIA QUERIES:  */
+
+/* @media all and (max-width:1440px) {
+  .bg-img {
+    width: 1450px;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media all and (min-width:1024px) {
+  .bg-img {
+    width: 1075px;
+  }
+  h1 {
+    font-size: 4.5em;
+  }
+}
+
+@media all and (min-width:768px) {
+  .bg-img {
+    width: 770px;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media all and (min-width:600px) {
+  .bg-img {
+    width: 610px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media all and (min-width:425px) {
+  .bg-img {
+    width: 430px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media all and (min-width:375px) {
+  .bg-img {
+    width: 400px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+@media all and (max-width:320px) {
+  .bg-img {
+    width: 330px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width:200px) {
+  h1 {
+    font-size: 1.5em;
+  }
+} 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
