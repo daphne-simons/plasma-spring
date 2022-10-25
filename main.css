@@ -10,7 +10,7 @@ body {
   height: auto;
  } */
  
- .bg-img {
+ .bg-img-index {
   background-color: rgb(197, 225, 250);
   background-image: url("/images/background.jpg");
   /* background-attachment: fixed; */
@@ -20,6 +20,35 @@ body {
   background-size: cover;
  } 
 
+.bg-img-leonor {
+  background-color: rgb(197, 225, 250);
+  background-image: url("/images/leonor-page-background.jpg");
+  background-attachment: fixed;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
+
+ .bg-img-tamara {
+  background-color: rgb(197, 225, 250);
+  background-image: url("/images/tam-vamp-pg-background.jpg");
+  background-attachment: fixed;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .bg-img-info {
+  background-color: rgb(197, 225, 250);
+  background-image: url("/images/Info-Gen-pg-background.jpg");
+  background-attachment: fixed;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
  .text-center {
   text-align: center;
  }
