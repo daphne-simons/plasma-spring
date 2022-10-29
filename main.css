@@ -186,24 +186,19 @@ h1 {
 
 
 /* Style the button and place it in the middle of the container/image */
-.btn {
+.audio-style {
   position: fixed;
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #555;
+  background-color: none;
   font-family:'Courier New', Courier, monospace;
   color: white;
   font-size: 1em;
-  padding: 1rem 2rem;
-  border: solid white 2px;
+  border: solid  rgb(255, 0, 217) 2px;
   cursor: pointer;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: rgb(90, 50, 22);
+  border-radius: 226px;
 }
 
 /* Audio styling:  */
@@ -236,13 +231,130 @@ audio::-webkit-media-controls-volume-slider {
   
 }
 
+/* NAV STYLING  */
+
+li {
+  font-family: cc-spellcaster, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(255, 0, 217);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.li-1 {
+  padding: 1rem;
+}
+.li-2 {
+  padding: 1rem 8rem 1rem 10rem;
+}
+.li-3 {
+  padding: 1rem 1rem 1rem 10rem;
+}
 
 
+nav ul li a{
+  color:rgb(110, 255, 209);
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
 
+nav ul li a:hover{
+  color:rgb(248, 255, 145);
+}
 
+span {
+  font-family: cc-spellcaster, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
+@media (max-width: 1024px) {
+  .li-1 {
+    padding: 0.7rem;
+  }
+  .li-2 {
+    padding: 0.7rem 6rem 0.7rem 8rem;
+  }
+  .li-3 {
+    padding: 0.7rem 0.7rem 0.7rem 8rem;
+  }
+  li {
+    font-size: 1.4rem;
+  }
+}
 
+@media (max-width: 770px) {
+  .li-1 {
+    padding: 0.5rem;
+  }
+  .li-2 {
+    padding: 0.5rem 3rem 0.5rem 5rem;
+  }
+  .li-3 {
+    padding: 0.5rem 0.5rem 0.5rem 5rem;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+}
 
+@media (max-width: 560px) {
+  .li-1 {
+    padding: 0.5rem;
+  }
+  .li-2 {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  }
+  .li-3 {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+  .nav-bar {
+    padding: 0.5;
+  }
+}
+
+@media (max-width: 410px) {
+  .li-1 {
+    padding: 0.5rem 8rem 0.5rem 8rem ;
+  }
+  .li-2 {
+    padding: 0.5rem 9rem 0.5rem 9rem;
+  }
+  .li-3 {
+    padding: 0.5rem 12rem 0.5rem 12rem;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+  .nav-bar {
+    padding: 0.5;
+    flex-wrap:wrap; 
+  }
+}
 
 
 
