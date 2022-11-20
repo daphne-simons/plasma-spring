@@ -92,10 +92,15 @@ audio::-webkit-media-controls-panel {
   border-radius: 226px;
 }
 
-audio::-webkit-media-controls-volume-slider {
-  background-color: #B1D4E0;
-  padding-left: 8px;
-  padding-right: 8px;
+/* PURCHASE BUTTON STYLING */
+.purchase-btn {
+  position:fixed;
+  top: 20%;
+  left: 50%;
+  width: 11rem;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  cursor: pointer;
 }
 
 
@@ -170,6 +175,12 @@ span {
   li {
     font-size: 1.4rem;
   }
+
+  .purchase-btn {
+    width: 9rem;
+    top: 19%;
+    left: 50%;
+  }
 }
 
 @media (max-width: 770px) {
@@ -184,6 +195,11 @@ span {
   }
   li {
     font-size: 1.2rem;
+  }
+  .purchase-btn {
+    width: 8rem;
+    top: 15%;
+    left: 50%;
   }
 }
 
@@ -202,6 +218,13 @@ span {
   }
   .nav-bar {
     padding: 0.5;
+  }
+
+  .purchase-btn {
+    width: 6.5rem;
+    top: 13%;
+    left: 50%;
+
   }
 }
 
@@ -222,8 +245,20 @@ span {
     padding: 0.5;
     flex-wrap:wrap; 
   }
+  .purchase-btn {
+    width: 6rem;
+    top: 22%;
+    left: 47%;
+  }
 }
 
+@media (max-width: 320px) {
+  .purchase-btn {
+    width: 6rem;
+    top: 19%;
+    left: 43%;
+  }
+}
 
 
 
