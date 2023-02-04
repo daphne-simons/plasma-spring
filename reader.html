@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Flipper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comic+Neue&display=swap" rel="stylesheet">
+
+</head>
+<!-- //javascript to make pages turn nicely -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const pageFlip = new St.PageFlip(document.getElementById('demoBookExample'), {
+    width: 550, // base page width
+    height: 776, // base page height
+
+    size: 'stretch',
+    // set threshold values:
+    minWidth: 315,
+    maxWidth: 1000,
+    minHeight: 420,
+    maxHeight: 1350,
+
+    maxShadowOpacity: 0.2, // Half shadow intensity
+    showCover: true,
+    mobileScrollSupport: false, // disable content scrolling on mobile devices
+  })
+
+  // load pages
+  pageFlip.loadFromHTML(document.querySelectorAll('.page'))
+
+  document.querySelector('.page-total').innerText = pageFlip.getPageCount()
+
+  document.querySelector('.btn-prev').addEventListener('click', () => {
+    pageFlip.flipPrev() // Turn to the previous page (with animation)
+  })
+
+  document.querySelector('.btn-next').addEventListener('click', () => {
+    pageFlip.flipNext() // Turn to the next page (with animation)
+  })
+
+  // triggered by page turning
+  pageFlip.on('flip', (e) => {
+    document.querySelector('.page-current').innerText = e.data + 1
+  })
+
+  // triggered when the state of the book changes
+  pageFlip.on('changeState', (e) => {
+    document.querySelector('.page-state').innerText = e.data
+  })
+
+  // triggered when page orientation changes
+  pageFlip.on('changeOrientation', (e) => {
+    document.querySelector('.page-orientation').innerText = e.data
+  })
+})
+
+</script>
+
+<body >
+ <!-- PLASMA SPRING COMIC PAGES  -->
+ <div class="mag-size">
+  <div class="container mx-auto my-10">
+        <div class="flip-book" id="demoBookExample">
+          <div class="page ">
+            <div class="page-content">
+              <div class="framewrapper">
+            <img src="./images/plasmaspring/P0.png" alt="coverpage">
+            </div>
+            </div>
+          </div>
+        </div>
+      <!-- Page 1 -->
+          <div class="page">
+              <div class="page-content">
+                <div class="framewrapper">
+                  <img src="./images/plasmaspring/P1.png" alt="title-page">
+                </div>
+              </div>
+          </div>
+      <!-- Page 2 -->
+          <div class="page">
+              <div class="page-content">
+                <img src="./images/plasmaspring/P2.png" alt="title-page">
+              </div>
+          </div>
+  <!-- Page 3 -->
+          <div class="page">
+              <div class="page-content">
+                <img src="./images/plasmaspring/P3.png" alt="title-page">
+              </div>
+          </div>
+
+    <!-- Page 4 -->
+    <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P4.png" alt="title-page">
+      </div>
+  </div>
+
+  <!-- Page 5 -->
+  <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P5.png" alt="title-page">
+    </div>
+  </div>
+
+    <!-- Page 6 -->
+  <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P6.png" alt="title-page">
+    </div>
+  </div>
+
+    <!-- Page 7 -->
+    <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P7.png" alt="title-page">
+      </div>
+    </div>
+
+    <!-- Page 8 -->
+    <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P8.png" alt="title-page">
+      </div>
+    </div>
+
+    <!-- Page 9 -->
+    <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P9.png" alt="title-page">
+      </div>
+    </div>
+
+    <!-- Page 10 -->
+    <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P10.png" alt="title-page">
+      </div>
+    </div>
+
+<!-- Page 11 -->
+<div class="page">
+  <div class="page-content">
+    <img src="./images/plasmaspring/P11.png" alt="title-page">
+  </div>
+</div>  
+
+<!-- Page 12 -->
+<div class="page">
+  <div class="page-content">
+    <img src="./images/plasmaspring/P12.png" alt="title-page">
+  </div>
+</div>
+
+<!-- Page 13 -->
+<div class="page">
+  <div class="page-content">
+    <img src="./images/plasmaspring/P13.png" alt="title-page">
+  </div>
+</div>  
+
+<!-- Page 14 -->
+<div class="page">
+  <div class="page-content">
+    <img src="./images/plasmaspring/P14.png" alt="title-page">
+  </div>
+</div>
+
+ <!-- Page 15 -->
+ <div class="page">
+  <div class="page-content">
+    <img src="./images/plasmaspring/P15.png" alt="title-page">
+  </div>
+</div>  
+
+<!-- Page 16 -->
+<div class="page">
+  <div class="page-content">
+    <img src="./images/plasmaspring/P16.png" alt="title-page">
+  </div>
+</div>
+
+
+  <!-- Page 17 -->
+  <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P17.png" alt="title-page">
+    </div>
+  </div>
+
+  <!-- Page 18 -->
+  <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P18.png" alt="title-page">
+    </div>
+  </div>  
+  
+  <!-- Page 19 -->
+  <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P19.png" alt="title-page">
+    </div>
+  </div>
+
+   <!-- Page 20 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P20.png" alt="title-page">
+    </div>
+  </div>  
+  
+  <!-- Page 21 -->
+  <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P21.png" alt="title-page">
+    </div>
+  </div>
+
+   <!-- Page 22 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P22.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 23 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P23.png" alt="title-page">
+      </div>
+    </div>
+
+       <!-- Page 24 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P24.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 25 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P25.png" alt="title-page">
+      </div>
+    </div>
+
+       <!-- Page 26 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P26.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 27 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P27.png" alt="title-page">
+      </div>
+    </div>
+
+       <!-- Page 28 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P28.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 29 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P29.png" alt="title-page">
+      </div>
+    </div>
+
+       <!-- Page 30 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P30.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 31 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P31.png" alt="title-page">
+      </div>
+    </div>
+
+       <!-- Page 32 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P32.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 33 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P33.png" alt="title-page">
+      </div>
+    </div>
+
+       <!-- Page 34 -->
+   <div class="page">
+    <div class="page-content">
+      <img src="./images/plasmaspring/P34.png" alt="title-page">
+    </div>
+  </div>
+
+     <!-- Page 35 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P35.png" alt="title-page">
+      </div>
+    </div>
+
+         <!-- Page 36 -->
+         <div class="page">
+          <div class="page-content">
+            <img src="./images/plasmaspring/P36.png" alt="title-page">
+          </div>
+        </div>
+
+             <!-- Page 37 -->
+     <div class="page">
+      <div class="page-content">
+        <img src="./images/plasmaspring/P37.png" alt="title-page">
+      </div>
+    </div>
+
+         <!-- Page 38 -->
+         <div class="page">
+          <div class="page-content">
+            <img src="./images/plasmaspring/P38.png" alt="title-page">
+          </div>
+        </div>
+
+    <!-- Back Cover Page -->
+          <div class="page page-cover page-cover-bottom">
+              <div class="page-content">
+                <img src="./images/plasmaspring/P39.png" alt="title-page">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <!-- HALLOWEELS COMIC PAGES  -->
+      <!-- <div class="mag-size">
+        <div class="container mx-auto my-10">
+              <div class="flip-book" id="demoBookExample">
+                <div class="page page-cover page-cover-top">
+                  <img src="./images/P00 Cover Front.png" alt="coverpage">
+                </div>
+              </div> -->
+            <!-- Page 1 -->
+                <!-- <div class="page">
+                    <div class="page-content">
+                      <div class="framewrapper">
+                      </div>
+                    </div>
+                </div> -->
+            <!-- Page 2 -->
+                <!-- <div class="page">
+                    <div class="page-content">
+                      <img src="./images/P1 - Title_.png" alt="title-page">
+                    </div>
+                </div> -->
+        <!-- Page 3 -->
+                <!-- <div class="page">
+                    <div class="page-content">
+                    </div>
+                </div> -->
+
+          <!-- Page 4 -->
+          <!-- <div class="page">
+            <div class="page-content">
+              <img src="./images/P3 - Previously.png" alt="title-page">
+            </div>
+        </div> -->
+
+        <!-- Page 5 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P4.png" alt="title-page">
+          </div>
+        </div> -->
+
+          <!-- Page 6 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P5.png" alt="title-page">
+          </div>
+        </div> -->
+
+          <!-- Page 7 -->
+          <!-- <div class="page">
+            <div class="page-content">
+              <img src="./images/P6.png" alt="title-page">
+            </div>
+          </div> -->
+
+          <!-- Page 8 -->
+          <!-- <div class="page">
+            <div class="page-content">
+              <img src="./images/P7.png" alt="title-page">
+            </div>
+          </div> -->
+
+          <!-- Page 9 -->
+          <!-- <div class="page">
+            <div class="page-content">
+              <img src="./images/P8.png" alt="title-page">
+            </div>
+          </div> -->
+
+          <!-- Page 10 -->
+          <!-- <div class="page">
+            <div class="page-content">
+              <img src="./images/P9.png" alt="title-page">
+            </div>
+          </div> -->
+
+      <!-- Page 11 -->
+      <!-- <div class="page">
+        <div class="page-content">
+          <img src="./images/P10.png" alt="title-page">
+        </div>
+      </div>   -->
+      
+      <!-- Page 12 -->
+      <!-- <div class="page">
+        <div class="page-content">
+          <img src="./images/P11.png" alt="title-page">
+        </div>
+      </div> -->
+
+      <!-- Page 13 -->
+      <!-- <div class="page">
+        <div class="page-content">
+          <img src="./images/p12.png" alt="title-page">
+        </div>
+      </div>   -->
+      
+      <!-- Page 14 -->
+      <!-- <div class="page">
+        <div class="page-content">
+          <img src="./images/p13.png" alt="title-page">
+        </div>
+      </div> -->
+
+      <!-- Page 15 -->
+      <!-- <div class="page">
+        <div class="page-content">
+          <img src="./images/P14.png" alt="title-page">
+        </div>
+      </div>   -->
+      
+      <!-- Page 16 -->
+      <!-- <div class="page">
+        <div class="page-content">
+          <img src="./images/P15.png" alt="title-page">
+        </div>
+      </div> -->
+
+
+        <!-- Page 17 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P16.png" alt="title-page">
+          </div>
+        </div>
+       -->
+        <!-- Page 18 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P17.png" alt="title-page">
+          </div>
+        </div>  
+         -->
+        <!-- Page 19 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P18.png" alt="title-page">
+          </div>
+        </div>
+       -->
+        <!-- Page 20 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P19.png" alt="title-page">
+          </div>
+        </div>   -->
+        
+        <!-- Page 21 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P20.png" alt="title-page">
+          </div>
+        </div> -->
+
+        <!-- Page 22 -->
+        <!-- <div class="page">
+          <div class="page-content">
+            <img src="./images/P21.png" alt="title-page">
+          </div>
+        </div> -->
+
+          <!-- Back Cover Page -->
+                <!-- <div class="page page-cover page-cover-bottom">
+                    <div class="page-content">
+                      <img src="./images/P0 Cover Back.png" alt="title-page">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div> -->
+
+  
+
+  <script src='https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
