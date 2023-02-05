@@ -10,22 +10,25 @@
 
 </head>
 <!-- //javascript to make pages turn nicely -->
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   const pageFlip = new St.PageFlip(document.getElementById('demoBookExample'), {
-    width: 550, // base page width
-    height: 776, // base page height
+    width: 275, // base page width
+    height: 388, // base page height
 
+    padding: '0px 20px',
     size: 'stretch',
     // set threshold values:
-    minWidth: 315,
+    minWidth: 157.5,
     maxWidth: 1000,
-    minHeight: 420,
+    minHeight: 210,
     maxHeight: 1350,
 
     maxShadowOpacity: 0.2, // Half shadow intensity
     showCover: true,
     mobileScrollSupport: false, // disable content scrolling on mobile devices
+    backgroundColor: 'orange', 
   })
 
   // load pages
@@ -58,17 +61,17 @@
 })
 
 </script>
-
-<body >
- <!-- PLASMA SPRING COMIC PAGES  -->
- <div class="mag-size">
-  <div class="container mx-auto my-10">
-        <div class="flip-book" id="demoBookExample">
-          <div class="page ">
-            <div class="page-content">
-              <div class="framewrapper">
-            <img src="./images/plasmaspring/P0.png" alt="coverpage">
-            </div>
+<body style="background-image: url(images/reader-bg.png)">
+ <!-- PLASMA SPRING 2019 COMIC -->
+ <div class="reader-body">
+   <div class="mag-size">
+     <div class="container mx-auto my-10">
+       <div class="flip-book" id="demoBookExample">
+         <div class="page ">
+           <div class="page-content">
+             <div class="framewrapper">
+               <img src="./images/plasmaspring/P0.png" alt="coverpage">
+              </div>
             </div>
           </div>
         </div>
@@ -348,6 +351,7 @@
       </div>
   </div>
 </div>
+
 
   <!-- HALLOWEELS COMIC PAGES  -->
       <!-- <div class="mag-size">

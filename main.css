@@ -378,52 +378,34 @@ span {
 
 .bg-img {
   /* opacity: 0.6; */
-    background-image: url(images/bg-wood.png);
+    /* background-image: url(images/reader-bg.png);  */
     
-    background-position: center center;
+    /* background-position: center center;
     
     background-repeat: no-repeat;
     
-    /* background-attachment: fixed; */
+    background-attachment: fixed; 
 
     background-size: cover;
 
-    background-color: #e7e7e7;
-   
+    background-color: #7d7d7d;  
+    */
     }
 
 .mag-size {
   display: flex;
+  /* align-items: center;
+  justify-content: center; */
   margin: 3rem 10rem 5rem 10rem;
-  /* padding: 10rem 5rem 5rem 30rem */
-}
-
-header {
-  font-size: 6em;
-  font-family: 'Comic Neue', cursive;
-  color:rgba(0, 0, 0, 0.8);
-  -webkit-text-stroke: 1.5px rgb(255, 241, 207);
-  padding: 2rem 1rem 1rem 1rem;
-  display:flex;
-  justify-content: space-around;
+  /* margin: 10rem; */
+  padding: 10rem 5rem 5rem 30rem;
+  /* padding: 10rem; */
 }
 
 .heading {
   padding: 1rem;
   text-align:center;
-  
 }
-
-/* .bg-heading {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(255, 231, 206, 0.7);
-  width: 12rem;
-  height: 9rem;
-  border-radius: 30px;
-  border: black solid 1px;
-} */
 
 .paragraph {
   font-family: 'Comic Neue', cursive;
@@ -438,37 +420,9 @@ header {
   border: black solid 1px;
 }
 
-
-h3 {
-  font-family: 'Comic Neue', cursive;
-  font-size: 2.5rem;
-  text-align: center;
+.reader-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h4 {
-  font-family: 'Comic Neue', cursive;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-h5 {
-  font-family: 'Comic Neue', cursive;
-  font-size: 1.5rem;
-  text-align: end ;
-  padding: 1rem 5rem 1rem 1rem
-}
-p {
-  font-size: 1.4rem;
-  padding: 3rem;
-}
-
-/* .spacer {
-  padding: 10rem;
-} */
-
-img {
-   /* position: absolute; */
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
